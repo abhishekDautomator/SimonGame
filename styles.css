@@ -1,0 +1,44 @@
+body{
+  text-align: center;
+}
+
+.box{
+  width: 200px;
+  height: 200px;
+  margin: 5px 40px;
+  border-width:1rem;
+  border-color:black;
+}
+
+.center-btn{
+  width:75px;
+  height:75px;
+  border-radius: 50%;
+  background-color: grey;
+  border-width: 13px;
+  border-color: black;
+}
+
+.red{
+  background-color: red;
+  border-radius: 0 180px 0 0;
+}
+
+.blue{
+  background-color: blue;
+  border-radius: 0 0 180px 0;
+}
+
+.green{
+  background-color: green;
+  border-radius: 180px 0 0 0;
+}
+
+.yellow{
+  background-color: yellow;
+  border-radius: 0 0 0 180px;
+}
+
+.game-over{
+  background-color: red;
+}
