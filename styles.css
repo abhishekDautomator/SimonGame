@@ -70,3 +70,8 @@ body{
 footer{
   padding-top: 50px;
 }
+
+.footer-icon{
+  font-size: 50px;
+  margin: 20px;
+}
