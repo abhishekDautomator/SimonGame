@@ -5,6 +5,8 @@ var userClickedColors = [];
 var colorSequence = [];
 var counter = 0;
 var flag = false;
+var userNmae=prompt("Please enter your name");
+
 $(".center-btn").click(function() {
   if (!flag) {
     $(".level-title").text("Level " + counter);
@@ -31,7 +33,7 @@ function checkAnswer(currentLevel){
     setTimeout(function(){
       $("body").removeClass("game-over");},200);
     $(".level-title").css({ fontSize: 12});
-    $(".level-title").text("You have conquered "+((counter===0)?counter:(counter-1))+" levels, press center button to restart");
+    $(".level-title").text(userNmae+" you have conquered "+((counter===0)?counter:(counter-1))+" levels, press center button to restart");
     $(".score").css("visibility","visible");
     $(".score").text("Score: "+((counter===0)?counter:(counter-1)));
     $(".center-btn").click(function() {
