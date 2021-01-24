@@ -31,7 +31,7 @@ function checkAnswer(currentLevel){
       $("body").removeClass("game-over");},200);
     $(".level-title").text("You have conquered "+(counter-1)+" levels, press center button to restart");
     $(".score").css("visibility","visible");
-    $(".score").append(" "+counter-1);
+    $(".score").append("  "+counter-1);
     $(".center-btn").click(function() {
       location.reload();
     });
