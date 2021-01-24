@@ -8,6 +8,7 @@ var flag = false;
 $(".center-btn").click(function() {
   if (!flag) {
     $(".level-title").text("Level " + counter);
+    $(".level-title").css({ fontSize: 24});
     nextSequence();
     flag = true;
   }
@@ -29,6 +30,7 @@ function checkAnswer(currentLevel){
     $("body").addClass("game-over");
     setTimeout(function(){
       $("body").removeClass("game-over");},200);
+    $(".level-title").css({ fontSize: 12});
     $(".level-title").text("You have conquered "+(counter-1)+" levels, press center button to restart");
     $(".score").css("visibility","visible");
     $(".score").append("  "+counter-1);
