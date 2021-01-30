@@ -84,7 +84,11 @@ footer{
 
 @media (min-width:768px){
     .level-title{
+<<<<<<< HEAD
       font-size: 16px;
+=======
+      font-size: 20px;
+>>>>>>> 3a42da29d6a8042fe06014cb1af7ef6039f72d2c
       padding: 10px 20px 30px;
     }
 

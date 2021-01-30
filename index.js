@@ -33,6 +33,7 @@ function checkAnswer(currentLevel){
     $("body").addClass("game-over");
     setTimeout(function(){
       $("body").removeClass("game-over");},200);
+    $(".level-title").css({ fontSize: 16});
     $(".level-title").text(name+" you have conquered "+((counter===0)?counter:(counter-1))+" levels, press center button to restart");
     $(".score").css("visibility","visible");
     $(".score").text("Game over, your score: "+((counter===0)?counter:(counter-1)));
