@@ -53,7 +53,7 @@ body{
 .score{
   display: inline-block;
   font-family: monospace;
-  color: grey;
+  color: purple;
   font-size: 75px;
   padding-top: 50px;
   visibility: hidden;
@@ -81,3 +81,33 @@ footer{
   font-size: 50px;
   margin: 20px;
 }
+
+@media (min-width:768px){
+    .level-title{
+      font-size: 16px;
+      padding: 10px 20px 30px;
+    }
+
+    .score{
+      padding-top: 25px;
+      font-size: 30px;
+    }
+
+    .box{
+      width: 150px;
+      height: 150px;
+      margin: 5px 30px;
+      border-width:1rem;
+    }
+
+    .center-btn{
+      width:75px;
+      height:75px;
+      border-radius: 50%;
+      border-width: 13px;
+    }
+
+    footer{
+      padding-top: 30px;
+    }
+  }

@@ -33,10 +33,9 @@ function checkAnswer(currentLevel){
     $("body").addClass("game-over");
     setTimeout(function(){
       $("body").removeClass("game-over");},200);
-    $(".level-title").css({ fontSize: 12});
     $(".level-title").text(name+" you have conquered "+((counter===0)?counter:(counter-1))+" levels, press center button to restart");
     $(".score").css("visibility","visible");
-    $(".score").text("Score: "+((counter===0)?counter:(counter-1)));
+    $(".score").text("Game over, your score: "+((counter===0)?counter:(counter-1)));
     $(".center-btn").click(function() {
       location.reload();
     });
